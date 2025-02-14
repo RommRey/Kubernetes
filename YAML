@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cpu-pod
+spec:
+  containers:
+  - name: cpu-container
+    image: nginx
+    resources:
+      requests:
+        cpu: "2" # Solicita 2 núcleos de CPU
+      limits:
+        cpu: "4" # Limita el uso de CPU a 4 núcleos
