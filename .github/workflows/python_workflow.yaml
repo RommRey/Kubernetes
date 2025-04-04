@@ -27,5 +27,5 @@ jobs:
           pwd
       - name: Execute python script # run file
         run: |
-          python python/print_n_numbers.py
+          python Python/print_n_numbers.py
         
