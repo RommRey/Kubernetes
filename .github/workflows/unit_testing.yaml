@@ -29,5 +29,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: TestResults
-          path: ./SuperNetCore/TestExploringActions/TestResults/TestResults.trx
+          path: ./NetCore/TestExploringActions/TestResults/TestResults.trx
 
