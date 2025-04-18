@@ -23,7 +23,7 @@ jobs:
         run: dotnet build ./NetCore/ExploringActionsZip/ExploringActions/ExploringActions.sln --configuration Release --no-restore
 
       - name: Run unit tests with report
-        run: dotnet test ./NetCore/TestExploringActions/TestExploringActions.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"
+        run: dotnet test .Kubernetes/NetCore/ExploringActionsZip/TestExploringActions/TestExploringActions.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"
         
       - name: Upload test results
         uses: actions/upload-artifact@v4
