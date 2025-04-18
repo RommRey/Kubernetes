@@ -17,7 +17,7 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Restore dependencies
-        run: dotnet restore .NetCore/ExploringActionsZip/ExploringActions
+        run: dotnet restore .NetCore/TestExploringActions/TestExploringActions.csproj
 
       - name: Build the solution
         run: dotnet build .NetCore/TestExploringActions/TestExploringActions.csproj --configuration Release --no-restore
